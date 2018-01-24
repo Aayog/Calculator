@@ -1,0 +1,41 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.button{
+	 -fx-text-fill: white;
+	 -fx-background-radius:0.0 ;
+}
+.text-field {
+    -fx-text-box-border: transparent;
+    -fx-padding : 0.0% ;
+}
+
+#rightButton{
+	-fx-background-color:#3d3f42;
+	-fx-font-size:30;
+}
+
+#rightButton:hover{
+	-fx-background-color:#232426;
+	
+}
+#clearbtn{
+	-fx-background-color:#3d3f42;
+}
+#clearbtn:hover{
+	-fx-background-color:#232426;
+}
+#numButton{
+	-fx-background-color:#232426;
+}
+
+#numButton:hover{
+	-fx-background-color:#4c525b;
+}
+
+.root{
+	-fx-font-size:20;
+	-fx-background-color:#1c9e97;
+}
+#bottom,top{
+	-fx-padding:0.0%;
+}
