@@ -1,7 +1,7 @@
 package application;
 
 import javafx.scene.control.Button;
-
+//main class
 public class ButtonCalc {
 	private static Double operand1=0.0;
 	private String operator="";
@@ -34,9 +34,9 @@ public class ButtonCalc {
 				}
 				Main.ansDisplay.setText(""+ans);
 			}
-			
+
 		});
-		
+
 		return button;
 	}
 	//for operator buttons
@@ -56,7 +56,7 @@ public class ButtonCalc {
 			if (!Main.ansDisplay.getText().equals(""))operand1 =Double.parseDouble(Main.ansDisplay.getText());
 
 		});
-	
+
 		return button;
 	}
 	//for clear buttons
@@ -72,7 +72,7 @@ public class ButtonCalc {
 			num = 0.0;
 			numbersOnly ="";
 			Main.setToTextField = "";
-			
+
 		});
 		return button;
 	}
@@ -83,7 +83,7 @@ public class ButtonCalc {
 		button.setPrefSize(70, 100);
 		button.setOnAction(e-> {
 			String ans_1 =Main.ansDisplay.getText();
-			Main.numAndSign.setText(ans_1);	
+			Main.numAndSign.setText(ans_1);
 			Main.ansDisplay.setText("");
 			operand1 = Double.parseDouble(ans_1);
 			operator = "";
@@ -91,8 +91,8 @@ public class ButtonCalc {
 			numbersOnly =ans_1;
 			Main.setToTextField = ans_1;
 		});
-		
+
 		return button;
 	}
-	
+
 }
