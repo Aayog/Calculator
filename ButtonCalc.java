@@ -8,6 +8,7 @@ public class ButtonCalc {
 	Main main = new Main();
 	Double num = 0.0;
 	String numbersOnly ="";
+	//for all the number buttons
 	public Button getNumButton(String prompt) {
 		Button button = new Button(prompt);
 		button.setId("numButton");
@@ -38,7 +39,7 @@ public class ButtonCalc {
 		
 		return button;
 	}
-	
+	//for operator buttons
 	public Button getOperatorButton(String prompt) {
 		Button button = new Button(prompt);
 		button.setId("rightButton");
@@ -58,6 +59,7 @@ public class ButtonCalc {
 	
 		return button;
 	}
+	//for clear buttons
 	public Button getClearButton(String prompt) {
 		Button button = new Button(prompt);
 		button.setId("clearbtn");
@@ -74,7 +76,7 @@ public class ButtonCalc {
 		});
 		return button;
 	}
-
+	//for equalToButton
 	public Button getEqualButton(String string) {
 		Button button = new Button(string);
 		button.setId("numButton");
